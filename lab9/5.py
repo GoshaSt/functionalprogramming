@@ -15,4 +15,4 @@ def g(x, y):
 
 h = composite_functions(f, g)
 result = h(4, 9)
-print("Result: {result}")
+print(f"eult: {result}")
