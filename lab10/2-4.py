@@ -1,5 +1,4 @@
 def knapsack(weights, values, max_weight):
-    n = len(weights)
     dp = [0] * (max_weight + 1)
     for i, w in enumerate(weights):
         for j in range(max_weight, w - 1, -1):

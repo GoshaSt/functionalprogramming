@@ -1,5 +1,4 @@
 def rotate_matrix(matrix):
-    # используем функции zip() и reversed() для поворота матрицы
     rotated_matrix = list(zip(*reversed(matrix)))
     print(rotated_matrix)
 
