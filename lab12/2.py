@@ -8,9 +8,7 @@ def check_name_in_lists(name, girl_names, boy_names):
     girl_name_found = name in girl_names
     boy_name_found = name in boy_names
 
-    if girl_name_found and boy_name_found:
-        return "both"
-    elif girl_name_found:
+    if girl_name_found:
         return "girl"
     elif boy_name_found:
         return "boy"
