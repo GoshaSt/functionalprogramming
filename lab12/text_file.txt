@@ -1,0 +1,26 @@
+Python has several built-in modules and functions for handling files. These functions are spread out over several modules such as os, os.path, shutil, and pathlib, to name a few. This article gathers in one place many of the functions you need to know in order to perform the most common operations on files in Python.
+
+In this tutorial, you’ll learn how to:
+
+Retrieve file properties
+Create directories
+Match patterns in filenames
+Traverse directory trees
+Make temporary files and directories
+Delete files and directories
+Copy, move, or rename files and directories
+Create and extract ZIP and TAR archives
+Open multiple files using the fileinput module
+Free Bonus: 5 Thoughts On Python Mastery, a free course for Python developers that shows you the roadmap and the mindset you’ll need to take your Python skills to the next level.
+
+Python’s “with open(…) as …” Pattern
+Reading and writing data to files using Python is pretty straightforward. To do this, you must first open files in the appropriate mode. Here’s an example of how to use Python’s “with open(…) as …” pattern to open a text file and read its contents:
+
+with open('data.txt', 'r') as f:
+    data = f.read()
+open() takes a filename and a mode as its arguments. r opens the file in read only mode. To write data to a file, pass in w as an argument instead:
+
+with open('data.txt', 'w') as f:
+    data = 'some data to be written to the file'
+    f.write(data)
+In the examples above, open() opens files for reading or writing and returns a file handle (f in this case) that provides methods that can be used to read or write data to the file. Check out Reading and Writing Files in Python and Working With File I/O in Python for more information on how to read and write to files.

@@ -23,7 +23,6 @@ def generate_numbers(date_str, birthdate_str):
     date_obj = datetime.datetime.strptime(date_str, '%Y-%m-%d')
     birthdate_obj = datetime.datetime.strptime(birthdate_str, '%Y-%m-%d')
     size = np.arange(1, 10, 1)
-    print(size)
     numbers = np.random.randint(low=birthdate_obj.year, high=date_obj.year, size=size[5])
     return numbers
 
