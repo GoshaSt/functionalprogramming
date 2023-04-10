@@ -26,9 +26,7 @@ name2 = input("Введите второе имя (или оставьте пу�
 
 if name1:
     result1 = check_name_in_lists(name1, girl_names, boy_names)
-    if result1 == "both":
-        print(f"Имя {name1} находится в обоих списках.")
-    elif result1 == "girl":
+    if result1 == "girl":
         print(f"Имя {name1} находится в списке имён девочек.")
     elif result1 == "boy":
         print(f"Имя {name1} находится в списке имён мальчиков.")
@@ -37,9 +35,7 @@ if name1:
 
 if name2:
     result2 = check_name_in_lists(name2, girl_names, boy_names)
-    if result2 == "both":
-        print(f"Имя {name2} находится в обоих списках.")
-    elif result2 == "girl":
+    if result2 == "girl":
         print(f"Имя {name2} находится в списке имён девочек.")
     elif result2 == "boy":
         print(f"Имя {name2} находится в списке имён мальчиков.")
