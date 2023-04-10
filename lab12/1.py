@@ -14,7 +14,7 @@ with open(filename, 'r', encoding='utf-8') as file:
     print(f'Содержимое файла {filename}:')
     print(content)
 
-new_filename = 'renamedfile.txt'
+new_filename = 'newversionoftextfile.txt'
 os.rename(filename, new_filename)
 print(f'Файл {filename} переименован в {new_filename}.')
 
