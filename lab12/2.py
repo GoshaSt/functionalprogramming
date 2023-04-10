@@ -12,8 +12,6 @@ def check_name_in_lists(name, girl_names, boy_names):
         return "girl"
     elif boy_name_found:
         return "boy"
-    else:
-        return "none"
 
 girl_names_filename = 'GirlNames.txt'
 boy_names_filename = 'BoyNames.txt'
