@@ -24,7 +24,7 @@ def process_text(text, num_most_common=10):
     words = text.split()
     filtered_words = [word for word in words if word not in STOP_WORDS]
     word_counts = count_words(filtered_words)
-    unique_words_count = len(set(word_counts))
+    unique_words_count = len(set(filtered_words))
     return unique_words_count, sorted(word_counts.items(), key=lambda x: x[1], reverse=True)[:num_most_common]
 
 filename = 'text_file.txt'
