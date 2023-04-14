@@ -3,11 +3,11 @@ def count_words(resume):
     return word_count
 
 def print_resume(resume):
-    print("Resume: {resume}")
+    print(resume)
 
 
 resume = "Я Статенин Георгий, учусь в SU."
 word_count = count_words(resume)
-
-print(print_resume(resume))
+test = print_resume(resume)
+print(test)
 print(f"Количество слов: {word_count}")
